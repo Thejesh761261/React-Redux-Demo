@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import UserDetails from './containers/userDetails';
+import UserList from './containers/userList';
+import FirstnameContainer from './containers/firstnamecontainer';
+import LastnameContainer from './containers/lastnamecontainer';
+import ScoreContainer from './containers/scorecontainer';
+import DetailsContainer from './containers/detailscontainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <FirstnameContainer></FirstnameContainer>
+     <LastnameContainer></LastnameContainer>
+     <ScoreContainer></ScoreContainer>
+     <DetailsContainer></DetailsContainer>
     </div>
   );
 }
